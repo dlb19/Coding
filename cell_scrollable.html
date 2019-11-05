@@ -1,0 +1,62 @@
+<!DOCTYdivE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            gap: 0.5em;
+        }
+        .grid > div{
+            background: #eee;
+            padding: 0.5em;
+        }
+        .grid > div:nth-child(odd){
+            background: #bbb;
+        }
+        .cell1 {
+            grid-column: 1/3;
+            overflow: scroll;
+            scrollbar-width: auto;
+        }
+        .cell2 {
+            overflow:auto;
+        }
+        .cell3 {
+            grid-row: 2/4;
+            overflow:auto;
+        }
+        .cell4 {
+
+            overflow:auto;
+        }
+        .cell5 {
+            overflow:auto;
+        }
+        .cell6 {
+            overflow:auto;
+        }
+        .cell7 {
+            overflow:auto;
+        }
+        .cell8 {
+            grid-column: 1/4;
+            overflow:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="cell1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit voluptatum nesciunt fugit amet nam ad soluta dolores, inventore nisi, maxime cumque nostrum, ipsa excepturi in. Harum cumque obcaecati id ut natus incidunt reprehenderit possimus quo consequuntur laudantium atque quam esse nesciunt iste, illo exercitationem recusandae quos, suscipit voluptatem beatae necessitatibus voluptas autem labore. Pariatur dolorem dolorum sunt iure facilis quas ad culpa quaerat molestiae numquam soluta alias dolores eos et odio nesciunt, veritatis reiciendis at repellendus nihil illum adipisci sequi provident! Fugit quia ipsum suscipit, debitis possimus reprehenderit accusamus, nobis aspernatur asperiores nesciunt officiis totam, magni quos iste aliquid.</div>
+        <div class="cell2">Lorem ipsum dolor sit.</div>
+        <div class="cell3">Lorem ipsum dolor sit.</div>
+        <div class="cell4">Lorem ipsum dolor sit.</div>
+        <div class="cell5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi doloremque similique ut culpa illo assumenda excepturi veritatis eaque, quam eveniet nulla saepe, voluptates aliquid minima hic optio sunt magni temporibus illum aperiam eius. Maiores quaerat eaque fugiat numquam recusandae vel?</div>
+        <div class="cell6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam quaerat et sit expedita minima harum quae neque ea labore earum distinctio, necessitatibus, ducimus magnam, exercitationem voluptatem voluptatibus beatae! A!</div>
+        <div class="cell7">Lorem ipsum dolor sit.</div>
+        <div class="cell8">Lorem ipsum dolor sit.</div> 
+    </div>
+</body>
+</html>

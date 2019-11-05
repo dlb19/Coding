@@ -1,0 +1,67 @@
+/* CSS Variables */
+:root {
+    --primary: rgb(169, 138, 190);
+    --dark: rgb(66, 12, 77);
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    /* Box-sizing means that if use padding, it won't change the width of the element. The color refers to text color, which affects all text unless styled differently in other elements. */
+    box-sizing: border-box; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--light);
+}
+
+body {
+    /* These settings specify the page's background color, margin and line height of every line. */
+    background-image: url(https://images.pexels.com/photos/891059/pexels-photo-891059.jpeg?cs=srgb&dl=book-bindings-composition-desk-891059.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 50px;
+    line-height: 1.7;
+}
+
+.wrapper {
+    /* This wraps round everything in the form and gives it a grid structure that is uniform. */
+    display: grid;
+    width: 800px;
+    margin: auto;
+    align-self: center;
+    background: var(--dark);
+    opacity: 0.8;
+    color: var(--light);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* This gives the correct text alignment relative to the buttons. Without it, the text appears underneath. */
+.r_c_button {
+    vertical-align: middle;
+}
+
+input, select, textarea {
+    border-radius: 8px;
+    padding: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+#submit {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--primary);
+}
+
+
