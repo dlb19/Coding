@@ -8,7 +8,9 @@
 
 html {
     /* Box-sizing means that if use padding, it won't change the width of the element. The color refers to text color, which affects all text unless styled differently in other elements. */
-    box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.4rem;
     font-weight: bold;
@@ -27,7 +29,9 @@ body {
 .wrapper {
     /* This wraps round everything in the form and gives it a grid structure that is uniform. */
     display: grid;
-    width: 800px;
+    width: 65vw;
+    max-width: 800px;
+    min-width: auto;
     margin: auto;
     align-self: center;
     background: var(--dark);
@@ -47,7 +51,7 @@ body {
 }
 
 /* This gives the correct text alignment relative to the buttons. Without it, the text appears underneath. */
-.r_c_button {
+.radio_check_button {
     vertical-align: middle;
 }
 
@@ -59,6 +63,7 @@ input, select, textarea {
 }
 
 #submit {
+    margin-top: 30px;
     font-weight: bold;
     font-size: 1rem;
     background-color: var(--primary);
