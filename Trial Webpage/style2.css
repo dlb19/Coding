@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 1024px;
+    margin: 130px auto 0;
+    background-image: linear-gradient(to bottom, rgb(252, 221, 180), rgba(255, 255, 255, 1));
+    background-repeat: no-repeat;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.aside h2 {
+    color: rgb(0, 0, 105);
+    font-family: "Montserrat", sans-serif;
+}
+
+li, a, button {
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    /* You could change above to space-between to distribure the three items evenly across the header. */
+    background-image: linear-gradient(to bottom, rgb(0, 0, 105), rgba(222, 184, 135, 0.95));
+    position: fixed;
+    top: 0;
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    padding: 30px 5%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #edf0f1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+}
+
+li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    /* The above pushes the logo to the left of the header. */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(0, 21, 59);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(2, 45, 126);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgb(2, 45, 126, 0.5);
+    color: rgb(0, 21, 59);
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 100%;
+}
+
+.aside {
+    margin: 5px 5px 0 0;
+    display: grid;
+    align-content: start;
+    /* gap: 10px; */
+    padding: 0 20px 0 0;
+    /* background-image: linear-gradient(to top, rgba(222, 184, 135, 1), rgba(255, 255, 255, 1));
+    border-radius: 0 8px 0 0; */
+}
+
+.aside > p:nth-child(odd) {
+    color: rgb(0, 0, 105);
+    font-weight: bold;
+}
+
+.ban {
+    text-align: right;
+}
+
+#page {
+    margin: 5px;
+    padding: 10px; 
+}
+
+#image1 {
+    float: left;
+    shape-outside: circle();
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+.chart {
+    margin: 30px auto;
+    /* width: 500px;
+    height: 200px; */
+    width: 75%;
+    /* height: 160px; */
+    border-left: 2px dotted #555;
+    border-bottom: 2px dotted #555;
+    padding: 20px 20px 20px 0;
+  }
+
+svg {
+    display: block;
+    margin: auto;
+}
