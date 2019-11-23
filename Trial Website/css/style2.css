@@ -123,9 +123,12 @@ button:hover {
     margin-top: 25px;
     grid-area: title;
     justify-content: center;
-    background-color: rgb(175, 142, 105);
+    background-image: linear-gradient(to  right, rgba(0, 0, 105, 0.5), rgba(222, 184, 135, 0));
+    /* background-color: rgba(222, 184, 135, 0.95); */
     color: white;
+    font-family: "Montserrat", sans-serif;
     align-self: center;
+    font-weight: normal;
 }
 
 .aside {
@@ -194,7 +197,7 @@ button:hover {
     }
 
     p {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
 }
