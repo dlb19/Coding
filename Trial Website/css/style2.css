@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 1024px;
+    margin: 130px auto 0;
+    background-image: linear-gradient(to bottom, rgb(252, 221, 180), rgba(255, 255, 255, 1));
+    background-repeat: no-repeat;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.aside h2 {
+    color: rgb(0, 0, 105);
+    font-family: "Montserrat", sans-serif;
+}
+
+.aside a {
+    color: black;
+}
+
+li, a, button {
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    /* You could change above to space-between to distribure the three items evenly across the header. */
+    background-image: linear-gradient(to bottom, rgb(0, 0, 105), rgba(222, 184, 135, 0.95));
+    position: fixed;
+    top: 0;
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    padding: 30px 5%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #edf0f1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 50px 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    /* The above pushes the logo to the left of the header. */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(0, 21, 59);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(2, 45, 126);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgb(2, 45, 126, 0.5);
+    color: rgb(0, 21, 59);
+}
+
+
+
+#main {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 75px;
+    grid-template-areas: 
+        'aside title title'
+        'aside left right'
+        'aside left right'
+        'aside left right'
+        'aside left right';
+    /* text-align: justify; */
+    align-self: start;
+    gap: 15px;
+    margin-right: 20px; 
+}
+
+.heading {
+    margin-top: 25px;
+    grid-area: title;
+    justify-content: center;
+    background-color: rgb(175, 142, 105);
+    color: white;
+    align-self: center;
+}
+
+.aside {
+    grid-area: aside;
+    margin: 5px 5px 0 0;
+    display: grid;
+    align-content: start;
+    padding: 0 20px 0 0;
+    transition: all 0.3s ease 0s;
+}
+
+.aside a:nth-of-type(odd) {
+    color: rgb(0, 0, 105);
+    font-weight: bold;
+}
+
+.aside a:hover {
+    color: rgb(98, 88, 241);
+}
+
+.ban {
+    text-align: right;
+    margin: 20px;
+}
+
+.left {
+    grid-area: left;
+    text-align: justify;
+    align-self: start;
+}
+
+.right {
+    grid-area: right;
+    text-align: justify;
+    align-self: start;
+}
+
+@media (max-width: 630px) {
+    .logo {
+        display: none;
+    }
+
+    button {
+        margin: 15px 0;
+    }
+
+    header {
+        display: block;
+        height: fit-content;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    body {
+        margin-top: 180px;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    #main {
+        display: block;
+        text-align: justify;
+        margin: 10px; 
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+}
