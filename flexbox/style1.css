@@ -111,7 +111,7 @@ button:hover {
 }
 
 .container-1 > div {
-    margin-top: 180px;
+    margin-top: 120px;
     border: 1px black solid;
     padding: 10px;
     box-shadow: 1px 1px 2px 2px gray;
@@ -168,7 +168,12 @@ button:hover {
     flex-basis: 15%;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 710px) {
+    .container-1 > div {
+        margin-top: 185px;
+    }
+
+
     .container-2 {
         display: flex;
         flex-wrap: wrap;
@@ -182,7 +187,22 @@ button:hover {
         height: auto;
     }
 
-    .nav-links {
-        flex-direction: column;
+    .logo {
+        display: none;
+    }
+
+    li {
+        display: block;
+        margin: 10px;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    button {
+        margin: 0 auto 10px;
     }
 }
