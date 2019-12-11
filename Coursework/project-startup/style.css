@@ -53,8 +53,7 @@ a {
 }
 
 .container > img {
-    width: 45%;
-    min-height: auto;
+    height: 45vh;
 }
 
 .wrapper {
