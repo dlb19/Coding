@@ -87,7 +87,7 @@ footer {
 .navbar{
     background: lightblue; /* Old browsers */
     background: -moz-linear-gradient(top, lightblue 0%, rgb(114, 199, 228) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lightblue), color-stop(100%, rgb(114, 199, 228) 100%))); /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lightblue), color-stop(100%, rgb(114, 199, 228) 100%)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, rgb(173, 216, 230) 0%, rgb(114, 199, 228) 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, rgb(173, 216, 230) 0%, rgb(114, 199, 228) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgb(173, 216, 230) 0%, rgb(114, 199, 228) 100%); /* IE10+ */
