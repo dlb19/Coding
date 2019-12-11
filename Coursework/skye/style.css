@@ -1,0 +1,136 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif; 
+  background: url(images/lanzarote.jpg) no-repeat center center; 
+  box-shadow: 0 0 50px 10px inset rgba(250, 235, 215, 0.5);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  font-family: 'cursive';
+  font-style: italic;
+  background-color: rgba(250, 235, 215, 0.3);
+  box-shadow: 0 0 10px 10px rgba(250, 235, 215, 0.3);
+  padding: 5px;
+}
+
+hr {
+  border-color: #f05f44;
+  border-width: 3px;
+  width: 50px;
+}
+
+.buffer {
+  height: 4rem;
+}
+
+.buffer1 {
+  height: 50px;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-custom1 {
+  background-color: #f05f44;
+  color: antiquewhite;
+  padding: 5px 10px;
+}
+
+.btn-custom1:hover {
+  background-color: #219bd3;
+  border-color: #219bd3;
+  color: antiquewhite;
+}
+
+.btn-lg {
+  padding: 5px 15px;
+}
+
+#section2 {
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h2 {
+  width: max-content;
+  padding: 10px 0 0 0;
+  margin: auto;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', cursive;
+  border-bottom: 3px solid #f05f44;
+}
+
+p {
+  margin: 20px 30px;
+  text-align: justify;
+}
+
+#volcano {
+  width: 35%;
+  float: left;
+  margin: 0 10px 0 30px;
+}
+
+#cuervo {
+  width: 35%;
+  float: right;
+  margin: 0 30px 0 10px;
+}
+
+#section3 {
+  clear: both;
+  width: 100%;
+  background-color: antiquewhite;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#puerto_del_carmen {
+  clear: both;
+  padding: 20px 0;
+}
+
+#puerto {
+  width: 35%;
+  float: left;
+  margin: 20px 10px 0 30px;
+}
+
+#costa_teguise {
+  clear: both;
+  padding: 20px 0;
+}
+
+#teguise {
+  width: 35%;
+  float: left;
+  margin: 20px 10px 0 30px;
+}
+
+#playa_blanca {
+  clear: both;
+  padding: 20px 0;
+}
+
+#blanca {
+  width: 35%;
+  float: left;
+  margin: 20px 10px 0 30px;
+}
