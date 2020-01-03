@@ -1,105 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recipes</title>
     <style>
         * {
             font-family: cursive;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-areas: 
-                "header header"
-                "description description"
-                "name1 picture1"
-                "name2 picture2"
-                "name3 picture3"
-                "name4 picture4"
-                "name5 picture5"
-                "email email";
+                "header"
+                "description"
+                "recipe1"
+                "recipe2"
+                "recipe3"
+                "recipe4"
+                "recipe5"
+                "email";
             justify-items: center;
             align-items: center;
-            gap: 10px 0;
+            gap: 1.5rem 0;
         }
 
         #header {
             grid-area: header;
+            text-align: -moz-center;
             text-align: center; 
             text-shadow: 2px 2px 3px burlywood; 
             background-color: brown; border-radius: 5px;
+            padding: 15px;
         }
 
         #description {
             grid-area: description;
+            text-align: -moz-center;
             text-align: center; 
-            font-size: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
         }
 
-        #name1 {
-            grid-area: name1;
-            text-align: center;
-            align-self: center;
-            padding: 0 20px;
-            /* height: max-content; */
+        .container1, .container2, .container3, .container4, .container5 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
-        #name2 {
-            grid-area: name2;
-            text-align: center;
-            align-self: center;
-            padding: 0 20px;
-            /* height: max-content; */
-        }
-
-        #name3 {
-            grid-area: name3;
-            text-align: center;
-            align-self: center;
-            padding: 0 20px;
-            /* height: max-content; */
-        }
-
-        #name4 {
-            grid-area: name4;
-            text-align: center;
-            align-self: center;
-            padding: 0 20px;
-            /* height: max-content; */
-        }
-
-        #name5 {
-            grid-area: name5;
-            text-align: center;
-            align-self: center;
-            padding: 0 20px;
-            /* height: max-content; */
-        }
-
-        #picture1 {
-            grid-area: picture1;
-            align-self: center;
-        }
-
-        #picture2 {
-            grid-area: picture2;
-            align-self: center;
-        }
-
-        #picture3 {
-            grid-area: picture3;
-            align-self: center;
-        }
-
-        #picture4 {
-            grid-area: picture4;
-            align-self: center;
-        }
-
-        #picture5 {
-            grid-area: picture5;
-            align-self: center;
+        #box1, #box2, #box3, #box4, #box5 {
+            padding: 0 30px 0 0;
+            text-align: justify;
         }
 
         #email {
@@ -109,6 +65,35 @@
         img {
             border: 2px solid black;
             border-radius: 5px;
+            box-shadow: 5px 5px 20px black;
+            transition: all 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 550px) {
+
+            .grid {
+                padding: 0;
+            }
+
+            .container1, .container2, .container3, .container4, .container5 {
+            flex-direction: column-reverse;
+            }
+
+            #box1, #box2, #box3, #box4, #box5 {
+            /* padding: 0 30px 20px 30px; */
+            padding: 0;
+            text-align: center;
+            }
+
+            p {
+                position: relative;
+                top: -15px;
+            }
+
         }
 
         a {
@@ -117,48 +102,68 @@
 
         input, textarea {
             border-radius: 5px;
+            padding: 5px;
         }
     </style>
 </head>
-<body style="background-color:bisque; max-width: 800px; margin: 20px auto; ">
-    <div class="grid" style="background-color: burlywood; border: 5px double black; border-radius: 10px; padding: 20px;">
+<body style="background-color:bisque; max-width: 800px; margin: 1rem auto; ">
+    <div class="grid" style="background-color: burlywood; border: 10px double black; border-radius: 10px; -webkit-background-clip: padding-box; background-clip: padding-box; padding: 30px;">
         <h1 id="header">Simple Recipes for All</h1>
-        <p id="description">All the cakes on our website are easy to make and take very little time to prepare. Why not give one of the recipes a go!</p>
-        <div id="name1"> 
-            <a  href="victoriasandwich.html">Victoria Sandwich Cake</a>
-            <p>A delicious traditional recipe. Fill with jam and cream, or buttercream. The choice is yours!</p> 
+        <p id="description">All the cakes on this website are easy to make and take very little time to prepare. Why not give one of the recipes a go!</p>
+        <div class="container1" id="recipe1">
+            <div id="box1"> 
+                <a  href="victoriasandwich.html">Victoria Sandwich Cake</a>
+                <p>A delicious traditional recipe. Fill with jam and cream, or buttercream. The choice is yours!</p> 
+            </div>
+            <div>
+                <a href="victoriasandwich.html"><img id="picture1" src="https://www.odlums.ie/wp-content/uploads/2016/11/Victoria-Sandwich.jpg" width="200" height="100"></a>
+            </div>
         </div>
-        <img id="picture1" src="https://www.odlums.ie/wp-content/uploads/2016/11/Victoria-Sandwich.jpg" width="200" height="100">
-        <div id="name2">
-            <a  href="lemondrizzle.html">Lemon Drizzle Cake</a>
-            <p>A refreshing treat to delight the tastebuds! It's difficult not to demolish this classic in just one sitting, so why not make two at once?</p>
-        </div>    
-        <img id="picture2" src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/05/elderflower-lemon-drizzle-cake.jpg" width="200" height="100">
-        <div id="name3">
-            <a href="flapjacks.html">Flapjacks</a>
-            <p>They're easy to make and ready in half-an-hour. Add chocolate drops, desiccated coconut or any other fruit, if you like.</p>
+        <div class="container2" id="recipe2">
+            <div id="box2">
+                <a  href="lemondrizzle.html">Lemon Drizzle Cake</a>
+                <p>A refreshing treat to delight the tastebuds! It's difficult not to demolish this classic in just one sitting, so why not make two at once?</p>
+            </div> 
+            <div>
+                <a href="lemondrizzle.html"><img id="picture2" src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/05/elderflower-lemon-drizzle-cake.jpg" width="200" height="100"></a> 
+            </div>
         </div>
-        <img id="picture3" src="http://www.keefcooks.com/cooking_images/uploads/fjack_tall.jpg" width="200" height="100">
-        <div id="name4">
-            <a href="gingercake.html">Ginger Cake</a>
-            <p>Try this moist and gooey stem ginger cake. You'll keep going back for more!</p>
+        <div class="container3" id="recipe3">
+            <div id="box3">
+                <a href="flapjacks.html">Flapjacks</a>
+                <p>They're easy to make and ready in half-an-hour. Add chocolate drops, desiccated coconut or any other fruit to suit your taste.</p>
+            </div>
+            <div>
+                <a href="flapjacks.html"><img id="picture3" src="http://www.keefcooks.com/cooking_images/uploads/fjack_tall.jpg" width="200" height="100"></a>
+            </div>
         </div>
-        <img id="picture4" src="https://assets.epicurious.com/photos/57c5aae3354f42d45822eac8/master/pass/fresh-ginger-cake.jpg" width="200" height="100">
-        <div id="name5">
-            <a href="scones.html">Simple Scones Recipe</a>
-            <p>You can't much simpler than this recipe. But don't let it's simplicity fool you - they're delicious!</p>
+        <div class="container4" id="recipe4">
+            <div id="box4">
+                <a href="gingercake.html">Ginger Cake</a>
+                <p>Try this moist and gooey stem ginger cake. You'll want to keep going back for more!</p>
+            </div>
+            <div>
+                <a href="gingercake.html"><img id="picture4" src="https://assets.epicurious.com/photos/57c5aae3354f42d45822eac8/master/pass/fresh-ginger-cake.jpg" width="200" height="100"></a>
+            </div>
         </div>
-        <img id="picture5" src="https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/food/recipes/mary-berry/mary-berry-fruit-scones.jpg" width="200" height="100">
+        <div class="container5" id="recipe5">
+            <div id="box5">
+                <a href="scones.html">Scones</a>
+                <p>You can't get much simpler than this recipe. But don't let it's simplicity fool you - they're delicious!</p>
+            </div>
+            <div>
+                <a href="scones.html"><img id="picture5" src="https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/food/recipes/mary-berry/mary-berry-fruit-scones.jpg" width="200" height="100"></a>
+            </div>
+        </div>
         <div id="email">
-        <p style="text-align: center;">If you have any recipes of your own that you would like to share, please submit them using the form below.</p>
-        <form style="text-align: center;">
-        <label>Name: <input type="name" name="name" required
-        placeholder="Full name"></label><br><br>
-        <label>Email: <input type="email" name="email" required placeholder="email@example.com"></label><br><br>
-        <label>Recipe:<br>
-        <textarea name="recipe" cols="30" rows="10" placeholder="Enter recipe here."></textarea></label><br><br>
-         <input type="submit" name="Submit">
-        </form>
+            <p style="text-align: center;">If you have any recipes of your own that you would like to share, please submit them using the form below.</p>
+            <form style="text-align: center;">
+                <label>Name: <input type="name" name="name" required placeholder="Full name"></label><br><br>
+                <label>Email: <input type="email" name="email" required placeholder="email@example.com"></label><br><br>
+                <label>Recipe:<br>
+                <textarea name="recipe" cols="30" rows="10" placeholder="Enter recipe here."></textarea></label><br><br>
+                <input style="background-color: brown; color: white; padding: 5px 10px;" type="submit" name="Submit">
+            </form>
         </div>
     </div>
 </body>
