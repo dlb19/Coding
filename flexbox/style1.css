@@ -23,7 +23,7 @@ li, a, button {
 header {
     display: flex;
     justify-content: flex-end;
-    /* You could change above to space-between to distribure the three items evenly across the header. */
+    /* You could change above to space-between to distribute the three items evenly across the header. */
     background-color: darkblue;
     position: fixed;
     top: 0;

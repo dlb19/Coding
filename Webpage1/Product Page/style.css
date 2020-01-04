@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -47,87 +49,69 @@ a {
 
 .grid {
     display: flex;
+    padding: 0 10px;
 }
 
 header {
+    display: flex;
+    justify-content: flex-end;
+    /* You could change above to space-between to distribute the three items evenly across the header. */
+    background-color: rgb(100, 68, 27);
     position: fixed;
     top: 0;
-    min-height: 80px;
-    padding: 0px 20px;
-    display: flex;
     max-width: 900px;
-    justify-content: space-around;
+    margin: auto;
     align-items: center;
-    background-color: rgb(100, 68, 27);
-    color: white;
-  }
+    padding: 10px 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    width: 100%;
+    overflow: hidden;
+    border: black 2px solid;
+}
 
-@media (max-width: 600px) {
-    header {
-      flex-wrap: wrap;
-    }
+#name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+li {
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .logo {
-    width: 100vw;
+    cursor: pointer;
+    margin-right: auto;
+    /* The above pushes the logo to the left of the header. */
 }
-
-/* @media (max-width: 650px) {
-    .logo {
-      margin-top: 15px;
-      width: 100%;
-      position: relative;
-    }
-} */
-
-.logo > img {
-    width: 15%;
-    height: auto;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 20px;
-}
-
-/* @media (max-width: 650px) {
-    .logo > img {
-      margin: 0 auto;
-    }
-} */
 
 nav {
     font-weight: bold;
 }
 
-/* @media (max-width: 650px) {
-    nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
+@media only screen and (max-width: 710px) {
+    .container > #hero {
+        margin-top: 100px;
     }
-    nav li {
-      padding-bottom: 5px;
-    }
-} */
 
-nav > ul {
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    .logo {
+        display: none;
+    }
+
+    li {
+        display: block;
+        margin: 10px;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 }
-
-/* @media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
-    }
-} */
 
 #hero {
     display: flex;
@@ -136,7 +120,7 @@ nav > ul {
     justify-content: center;
     text-align: center;
     height: 200px;
-    margin-top: 60px;
+    margin-top: 80px;
     background-color: rgb(192, 172, 153);
 }
 
@@ -166,12 +150,6 @@ nav > ul {
     background-color: orange;
     transition: background-color 1s;
 }
-
-/* @media (max-width: 650px) {
-    #hero {
-      margin-top: 228px;
-    }
-} */
 
 #features .icon {
     display: flex;
@@ -205,12 +183,6 @@ nav > ul {
       height: 150px;
     }
 }
-
-/* @media (max-width: 650px) {
-    #features {
-      margin-top: 0;
-    }
-} */
 
 #how-it-works {
     margin-top: 50px;
@@ -259,7 +231,7 @@ nav > ul {
 }
 
 .product > p {
-    margin: 15px 0;
+    margin: 15px 10px;
 }
 
 .product > p > li {
@@ -292,23 +264,23 @@ nav > ul {
 
 footer {
     margin-top: 30px;
-    background-color: rgb(192, 172, 153);
-    padding: 20px;
+    background-color: rgb(146, 126, 107);
+    padding: 10px 20px;
 }
 
 footer > ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 footer > ul > li {
-    margin: 20px;
+    margin: 10px;
 }
 
 footer > span {
     margin-top: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 0.9em;
     color: #444;
 }
