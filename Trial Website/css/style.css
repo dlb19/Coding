@@ -11,19 +11,25 @@ body {
     height: 100vh;
     max-width: 1024px;
     margin: 130px auto 0;
-    background-image: linear-gradient(to bottom, rgb(252, 221, 180), rgba(255, 255, 255, 1));
+    background-image: linear-gradient(to bottom, rgba(252, 221, 180, 0.5), rgba(255, 255, 255, 1));
     background-repeat: no-repeat;
     color: black;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    align-content: center;
+}
+
+hr {
+    border-top: 1px solid rgb(0, 0, 105);
+    margin: 0 10px;
 }
 
 h2 {
     text-align: center;
-    margin: 20px 0;
+    align-content: center;
+    /* margin: 20px 0; */
 }
 
 .aside h2 {

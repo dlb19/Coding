@@ -11,7 +11,7 @@ body {
     height: 100vh;
     max-width: 1024px;
     margin: 130px auto 0;
-    background-image: linear-gradient(to bottom, rgb(252, 221, 180), rgba(255, 255, 255, 1));
+    background-image: linear-gradient(to bottom, rgba(252, 221, 180, 0.5), rgba(255, 255, 255, 1));
     background-repeat: no-repeat;
     color: black;
 }
