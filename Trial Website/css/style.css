@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
 }
 
 body {
@@ -28,10 +29,12 @@ h2 {
 .aside h2 {
     color: rgb(0, 0, 105);
     font-family: "Montserrat", sans-serif;
+    
 }
 
 .aside a {
     color: black;
+    font-size: small;
 }
 
 li, a, button {
@@ -149,6 +152,7 @@ button:hover {
 
 p {
     padding: 10px;
+    font-size: large;
 }
 
 .chart {

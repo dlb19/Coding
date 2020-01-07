@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
 }
 
 body {
@@ -32,6 +33,7 @@ h2 {
 
 .aside a {
     color: black;
+    font-size: small;
 }
 
 li, a, button {
@@ -164,6 +166,10 @@ button:hover {
     grid-area: right;
     text-align: justify;
     align-self: start;
+}
+
+p {
+    font-size: large;
 }
 
 @media (max-width: 630px) {
